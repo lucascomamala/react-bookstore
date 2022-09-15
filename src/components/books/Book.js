@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Book = ({ book }) => (
   <>
     <div>
@@ -17,5 +19,12 @@ const Book = ({ book }) => (
     </div>
   </>
 );
+
+Book.propTypes = {
+  book: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default Book;

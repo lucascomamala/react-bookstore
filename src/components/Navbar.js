@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const Navbar = ({ title, routes }) => (
   <nav className="navbar">
@@ -15,5 +15,13 @@ const Navbar = ({ title, routes }) => (
     </ul>
   </nav>
 );
+
+Navbar.propTypes = {
+  title: PropTypes.string.isRequired,
+  routes: PropTypes.arrayOf(PropTypes.shape({
+    path: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+  })).isRequired,
+};
 
 export default Navbar;
