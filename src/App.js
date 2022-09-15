@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar';
-import Books from './components/Books';
-import Categories from './components/Categories';
+import Books from './components/books/BooksPage';
+import Categories from './components/categories/Categories';
 import './App.css';
 
 const routes = [
@@ -26,9 +26,8 @@ function App() {
       <Navbar title="Bookstore CMS" routes={routes} />
       <div className="container">
         <Routes>
-          {routes.map(({ path, component }) => (
-            <Route path={path} key={path} element={component} />
-          ))}
+          <Route path="/" element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
         </Routes>
       </div>
     </>
