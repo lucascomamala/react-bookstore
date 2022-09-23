@@ -1,13 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 
-const Books = ({ books }) => (
-  <ul className="books">{books.map((book) => <li key={book.title}><Book book={book} /></li>)}</ul>
-);
+const Books = () => {
+  const { books } = useSelector((state) => state.books);
 
-Books.propTypes = {
-  books: PropTypes.arrayOf(Book.propTypes.book).isRequired,
+  return (<ul className="books">{books.map((book) => <li key={book.title}><Book book={book} /></li>)}</ul>);
 };
 
 export default Books;
