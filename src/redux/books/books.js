@@ -1,17 +1,22 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
 const initialState = {
   books: [
     {
+      id: uuidv4(),
       title: 'The Design of Everyday Things',
       author: 'Don Norman',
     },
     {
+      id: uuidv4(),
       title: 'The Most Human Human',
       author: 'Brian Christian',
     },
     {
+      id: uuidv4(),
       title: 'The Pragmatic Programmer',
       author: 'Andrew Hunt',
     },
