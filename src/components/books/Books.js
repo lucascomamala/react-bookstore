@@ -5,7 +5,11 @@ import Book from './Book';
 const Books = () => {
   const { books } = useSelector((state) => state.books);
 
-  return (<ul className="books">{books.map((book) => <li key={book.title}><Book book={book} /></li>)}</ul>);
+  return (
+    <ul className="books">
+      {books.map((book) => <li key={book.id}><Book book={book} /></li>)}
+    </ul>
+  );
 };
 
 export default Books;
