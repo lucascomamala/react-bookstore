@@ -9,10 +9,10 @@ const Categories = () => {
   const status = useSelector((state) => state.categories);
 
   return (
-    <>
-      <button type="button" onClick={handleStatus}>Check status</button>
-      <h2>{status}</h2>
-    </>
+    <div className="categories-container">
+      <button className="primary-button-big" type="button" onClick={handleStatus}>Check status</button>
+      <h2 className="categories-message">{status}</h2>
+    </div>
   );
 };
 

@@ -4,6 +4,7 @@ import AddBook from './AddBook';
 const BooksPage = () => (
   <>
     <Books />
+    <div className="horizontal-divider" />
     <AddBook />
   </>
 );

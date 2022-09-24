@@ -30,11 +30,11 @@ const AddBook = () => {
 
   return (
     <section>
-      <h2>ADD NEW BOOK</h2>
-      <form>
-        <input type="text" id="form-title" placeholder="Book title" value={title} onChange={onTitleChange} />
-        <input type="text" id="form-author" placeholder="Book author" value={author} onChange={onAuthorChange} />
-        <button type="submit" onClick={handleSubmit}>ADD BOOK</button>
+      <h2 className="form-title">ADD NEW BOOK</h2>
+      <form className="add-form">
+        <input className="input title-input" id="title-input" placeholder="Book title" required value={title} onChange={onTitleChange} />
+        <input className="input author-input" id="author-input" placeholder="Book author" required value={author} onChange={onAuthorChange} />
+        <button type="submit" className="primary-button-big" onClick={handleSubmit}>ADD BOOK</button>
       </form>
     </section>
   );
