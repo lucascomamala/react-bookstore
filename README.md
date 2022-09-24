@@ -16,7 +16,7 @@ Bookstroe websapp built with React and Redux that allows you to:
 
 ## Live Demo (if available)
 
-[Live Demo Link] (COMING SOON)
+[Live Demo Link](https://fastidious-licorice-897363.netlify.app/)
 
 
 ## Getting Started
