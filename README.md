@@ -1,8 +1,10 @@
+![Capture](https://github.com/lucascomamala/react-bookstore/assets/10102977/30742fc3-f109-442b-bbe1-bf9cf5c27f4f)
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# React Bookstore
+# The Book Emporium
 
-Bookstroe websapp built with React and Redux that allows you to:
+Bookstore web app built with React and Redux that allows you to:
 - Display a list of books.
 - Add a book.
 - Remove a selected book.
@@ -14,9 +16,9 @@ Bookstroe websapp built with React and Redux that allows you to:
 - React
 - Redux
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://fastidious-licorice-897363.netlify.app/)
+[Live Demo Link](https://bookemporium.netlify.app/)
 
 
 ## Getting Started
